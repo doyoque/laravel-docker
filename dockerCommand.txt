@@ -1,0 +1,7 @@
+docker run -d --name doyoque_web_link \                                                                                                                                                                                                                    
+> -p 8000:80 -p 8443:443 \
+> -v /home/doyoque/Documents/Proyek/php/sleepyhead/app/:/var/www/laravel/app/ \ 
+> -v /home/doyoque/Documents/Proyek/php/sleepyhead/resources/:/var/www/laravel/resources/ \  
+> -v /home/doyoque/Documents/Proyek/php/sleepyhead/public/:/var/www/laravel/public/ \
+> --link mysql:5.6 eboraas/laravel
+
